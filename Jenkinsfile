@@ -5,7 +5,7 @@ pipeline {
       stage('checkout repos') {
         steps {
           checkout scm
-          pwd
+          sh "pwd"
         }
       }
       stage('Install puppet-agent') {
